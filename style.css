@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.task-input-container {
+  background-color: rgb(224, 248, 248);
+  border-radius: 10px;
+}
+.task-input-container .task-form-input {
+  width: 75%;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .task-input-container .task-form-input {
+    width: 400px;
+  }
+}
+
+.tasks-container {
+  overflow: scroll;
+}/*# sourceMappingURL=style.css.map */

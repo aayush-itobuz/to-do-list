@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.task-input-container{
+  background-color:rgb(224, 248, 248);
+  border-radius: 10px;
+
+  .task-form-input {
+    width: 75%;
+    border-radius: 5px;
+
+    @media (min-width: 768px) {
+      width: 400px;
+    }
+  }
+}
+
+.tasks-container {
+  overflow: scroll;
+}
+
+.check-btn {
+  
+}
