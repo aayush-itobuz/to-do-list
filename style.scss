@@ -7,8 +7,8 @@ body {
   padding: 0;
 }
 
-.task-input-container{
-  background-color:rgb(224, 248, 248);
+.task-input-container {
+  background-color: rgb(224, 248, 248);
   border-radius: 10px;
 
   .task-form-input {
@@ -19,12 +19,4 @@ body {
       width: 400px;
     }
   }
-}
-
-.tasks-container {
-  overflow: scroll;
-}
-
-.check-btn {
-  
 }
