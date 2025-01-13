@@ -1,5 +1,3 @@
-
-
 const inputTask = document.getElementById("task-input");
 const inputBtn = document.getElementById("task-btn");
 const taskList = document.querySelector('#tasks');
@@ -26,24 +24,30 @@ const printTask = () => {
   taskList.innerHTML = '';
 
   for (let i = 0; i < arr.length; i++) {
-    const p = document.createElement('p');
     const note = document.createTextNode(arr[i].title);
-
     const div = document.createElement('div');
-    const btn = document.createElement('btn');
-    btn.classList.add("remove-btn");
-    btn.innerText = "X";
-    btn.style.color = "red";
-    p.appendChild(note);
-    taskList.appendChild(p);
-    taskList.appendChild(btn);
+    const deleteBtn = document.createElement("btn");
 
-    // p.appendChild(note);
-    // taskList.appendChild(p);
+    div.classList.add("task");
+    deleteBtn.classList.add("remove-btn");
+    deleteBtn.innerText = "X";
+
+    div.appendChild(note);
+    div.appendChild(deleteBtn);
+    taskList.appendChild(div);
   }
+}
+
+const deleteTask = () => {
+
 }
 
 inputBtn.addEventListener("click", function () {
   addTask();
   printTask();
 });
+
+deleteBtn.addEventListener("click", function () {
+  deleteTask();
+});
+

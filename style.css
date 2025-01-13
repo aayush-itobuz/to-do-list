@@ -19,4 +19,22 @@ body {
   .task-input-container .task-form-input {
     width: 400px;
   }
+}
+
+.remove-btn {
+  border: 1px solid black;
+  color: red;
+  background-color: aliceblue;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.tasks-container {
+  background-color: rgb(224, 248, 248);
+  width: 50%;
+  margin: auto;
+}
+
+.task {
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
