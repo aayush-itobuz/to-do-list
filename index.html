@@ -12,25 +12,23 @@
 
 <body>
 
-  <div class="task-input-container d-flex flex-column flex-wrap justify-content-center align-content-center m-5 p-2">
+  <div class="task-input-container d-flex flex-column flex-wrap justify-content-center align-content-center p-3">
     <h1 class="todo-heading text-center">TO DO..</h1>
 
-    <form action="#" class="task-form">
+    <form action="#" class="task-form text-center">
       <input type="text" placeholder="Enter a task..." class="task-form-input p-2" id="task-input">
-      <button id="task-btn">add</button>
+      <button id="task-btn">Add</button>
     </form>
   </div>
 
-  <div id="tasks" class="tasks-container text-center">
+  <div id="tasks" class="tasks-container"></div>
 
+  <div class="check-btn d-flex justify-content-center align-content-center gap-2 m-5">
+    <button type="button" class="btn btn-primary all-task">All</button>
+    <button type="button" class="btn btn-primary active-task">Active</button>
+    <button type="button" class="btn btn-primary completed-task">Completed</button>
+    <button type="button" class="btn btn-primary clear-completed-task">Clear Completed</button>
   </div>
-
-  <!-- <div class="check-btn d-flex justify-content-center align-content-center gap-2 m-5">
-    <button type="button" class="btn btn-primary">All</button>
-    <button type="button" class="btn btn-primary">Active</button>
-    <button type="button" class="btn btn-primary">Completed</button>
-    <button type="button" class="btn btn-primary">Clear Completed</button>
-  </div> -->
 
   <script src="./app.js"></script>
 </body>

@@ -10,14 +10,24 @@ body {
 .task-input-container {
   background-color: rgb(224, 248, 248);
   border-radius: 10px;
+  max-width: 70%;
+  margin: 3rem auto;
 
   .task-form-input {
-    width: 75%;
+    max-width: 75%;
     border-radius: 5px;
 
     @media (min-width: 768px) {
       width: 400px;
     }
+  }
+
+  #task-btn {
+    border-radius: 5px;
+    background-color: #0D6EFD;
+    color: white;
+    padding: 6px 12px;
+    border: none;
   }
 }
 
@@ -25,16 +35,38 @@ body {
   border: 1px solid black;
   color: red;
   background-color:aliceblue;
-  padding: 3px;
+  padding: 5px 8px;
   cursor: pointer;
 }
 
 .tasks-container {
-  background-color: rgb(224, 248, 248);
   width: 50%;
   margin: auto;
+  height: 50vh;
+  overflow: auto;
 }
 
 .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
   padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgb(247, 231, 212);
+  overflow-y: auto;
+  max-height: 120px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
 }
